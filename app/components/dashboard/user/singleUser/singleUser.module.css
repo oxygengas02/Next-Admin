@@ -1,0 +1,27 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input,
+.form textarea,
+.form select {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.form label {
+  font-size: 12px;
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
