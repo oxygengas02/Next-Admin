@@ -1,0 +1,53 @@
+.tableContainer {
+  overflow-x: auto;
+  border-radius: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .table th,
+  .table td {
+    font-size: 14px;
+  }
+  .table td {
+    white-space: normal;
+  }
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.table td {
+  white-space: nowrap;
+}
+
+.button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.view {
+  background: teal;
+  color: white;
+}
+
+.delete {
+  background: crimson;
+  color: white;
+  margin-left: 10px;
+}
