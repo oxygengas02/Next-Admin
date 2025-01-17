@@ -59,13 +59,25 @@
 // };
 // export default Users;
 
+"use client";
+
 import Search from "@/app/components/dashboard/search/search";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "@/app/components/dashboard/user/users.module.css";
 import Pagination from "@/app/components/dashboard/pagination/pagination";
+import { getUser } from "@/app/apis/usersService";
+import { useEffect, useState } from "react";
 
 const Users = () => {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    setUsers(getUser());
+  }, []);
+
+  console.log(users);
+
   return (
     <div className="bg-white p-5 mt-5 rounded-[10px]">
       <div className="flex items-center justify-between mb-3">

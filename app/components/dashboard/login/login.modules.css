@@ -1,0 +1,13 @@
+input {
+  padding: 15px;
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+/* button {
+  padding: 10px;
+  background: gray;
+  color: white;
+  border: none;
+  cursor: pointer;
+} */
